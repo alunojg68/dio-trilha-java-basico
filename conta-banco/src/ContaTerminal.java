@@ -49,8 +49,8 @@ public class ContaTerminal {
                 // Imprimindo os dados para o usuário
         System.out.println("-------------Olá " + nomeCompleto + "!" +
          "------------- \n\n* Obrigado por Criar Uma Conta Em Nosso Banco.      \n* Agência : " +
-          agencia.toString() + "      \n* Conta é : " + numeroConta + "       \n* Saldo   : " + saldo + 
-          "            \n* Status : SALDO DISPONÍVEL !!!\n\n    ------------------------------------------");
+          agencia.toString() + "      \n* Conta   : " +  numeroConta + "       \n* Saldo   : " + "R$ "  + saldo + 
+          "            \n* Status  : SALDO DISPONÍVEL !!!\n\n----------------------------------------------");
 
 
     }
