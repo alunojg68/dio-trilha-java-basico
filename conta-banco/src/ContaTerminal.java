@@ -1,6 +1,15 @@
 import java.util.Locale;
 import java.util.Scanner;
 
+/**
+ *  A classe ContaTerminal é responsável por criar uma conta bancária
+ * através da entrada de dados do usuário. Ela captura informações como
+ * número da conta , agência, nome do cliente e saldo, e exibe uma mensagem
+ * de confirmação com os dados fornecidos.
+ * @param args
+ * @throws Exception
+ */
+
 public class ContaTerminal {
 
     
@@ -8,7 +17,7 @@ public class ContaTerminal {
             
                 //TODO: Conhecer e importar a classe Scanner
                 //Exibir as mensagens para o nosso usuário
-                //Obter pela scanner os valores digitados no termonal
+                //Obter pela scanner os valores digitados no terminal
                 //Exibir a mensagem conta criada
                 
 
@@ -19,6 +28,7 @@ public class ContaTerminal {
                 
                 // Capturando o número da conta do usuário
                 System.out.print("\n* Digite o Número da Conta: ");
+                
                 int numeroConta=scanner.nextInt();
                 
                 // Capturando a agência do usuário
