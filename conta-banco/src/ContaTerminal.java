@@ -5,38 +5,52 @@ public class ContaTerminal {
 
     
     public static void main(String[] args) throws Exception {
-      
-        //TODO: Conhecer e importar a classe Scanner
+            
+                //TODO: Conhecer e importar a classe Scanner
+                //Exibir as mensagens para o nosso usuário
+                //Obter pela scanner os valores digitados no termonal
+                //Exibir a mensagem conta criada
+                
 
-        //Exibir as mensagens para o nosso usuário
-
-        //Obter pela scanner os valores digitados no termonal
-
-        //Exibir a mensagem conta criada
+        
 
         Scanner scanner= (new Scanner(System.in)).useLocale(Locale.US);
 
-        System.out.println("********Seja Bem Vindo(a)!********** \n" + " Digite o Número da Conta: ");
-        int numeroConta=scanner.nextInt();
+                
+                // Capturando o número da conta do usuário
+                System.out.print("\n* Digite o Número da Conta: ");
+                int numeroConta=scanner.nextInt();
+                
+                // Capturando a agência do usuário
+                System.out.print("\n* Digite o Número da Agência: ");
+                String agencia=scanner.next();
 
-        System.out.println(" Digite o Número da Agência: ");
-        String agencia=scanner.next();
+                // Capturando o último primeiro nome do usuário
+                System.out.print("\n* Digite o Primeiro Nome do Cliente: ");
+                String nomeCliente=scanner.next();
+            
+                
+                // Capturando o último sobrenome do usuário
+                System.out.print("\n* Digite o Sobrenome do Cliente: ");
+                String sobreNomeCliente=scanner.next();
 
+                // Concantenando o nomeCliente com o sobrenomeCliente
 
-        System.out.println(" Digite o Primeiro Nome do Cliente: ");
-        String nomeCliente=scanner.next();
+                String nomeCompleto=nomeCliente + " " + sobreNomeCliente;
 
-        System.out.println(" Digite o Sobrenome do Cliente: ");
-        String sobreNomeCliente=scanner.next();
+                // Capturando o valor do saldo 
+                System.out.print("\n* Digite o Seu Saldo: ");
+                Double saldo=scanner.nextDouble();
 
+                // Pulando duas linhas
+                System.out.println("\n\n");
 
-        System.out.println(" Digite o Seu Saldo: ");
-        Double saldo=scanner.nextDouble();
-
-
-        //System.out.println("\n \n");
-
-        System.out.println("Olá " + nomeCliente + " " + sobreNomeCliente + "! \n Obrigado por Criar Uma Conta Em Nosso Banco. \n Sua Agência é " + agencia.toString() + ", \n Sua Conta é " + numeroConta + ", \n e Seu Saldo de " + saldo + ", Já Está Disponível !");
+                
+                // Imprimindo os dados para o usuário
+        System.out.println("-------------Olá " + nomeCompleto + "!" +
+         "------------- \n\n* Obrigado por Criar Uma Conta Em Nosso Banco.      \n* Agência : " +
+          agencia.toString() + "      \n* Conta é : " + numeroConta + "       \n* Saldo   : " + saldo + 
+          "            \n* Status : SALDO DISPONÍVEL !!!\n\n    ------------------------------------------");
 
 
     }
