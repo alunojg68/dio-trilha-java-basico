@@ -7,6 +7,15 @@ import java.util.Scanner;
 
 public class Contador {
 
+  /**
+   * O programa recebe dois números do usuário.
+   * Valida se o o primeiro número , é maior que o segundo.
+   * Se a validação for falsa, ele entra na exceção e imprimi o erro.
+   * Se a validação for verdadeira ele imprime um contador com base na diferença entre o primeiro e o segundo número. 
+   * 
+   * @param args
+   */
+
 
 
     public static void main(String[] args){ 
