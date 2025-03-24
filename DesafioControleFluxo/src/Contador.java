@@ -1,22 +1,26 @@
 
 import java.util.Scanner;
 
+/**
+ * A classe Contador é responsável por solicitar dois números inteiros ao
+ * usuário
+ * e contar a partir do primeiro número até o segundo, se o segundo número for
+ * maior.
+ */
+
 public class Contador {
 
   /**
-   * O programa recebe dois números do usuário.
-   * Valida se o o primeiro número , é maior que o segundo.
-   * Se a validação for falsa, ele entra na exceção e imprimi o erro.
-   * Se a validação for verdadeira ele imprime um contador com base na diferença
-   * entre o primeiro e o segundo número.
+   * O ponto de entrada do programa. Solicita ao usuário dois números inteiros
+   * e chama o método contar para realizar a contagem.
    * 
-   * @param args
+   * @param args Argumentos da linha de comando .
    */
 
   public static void main(String[] args) {
 
     try (Scanner terminal = new Scanner(System.in)) {
-      
+
       // Solicita ao usuário o valor do primeiro parâmetro.
       System.out.println("Digite o primeiro Número: ");
       int parametroUm = terminal.nextInt();
@@ -40,10 +44,15 @@ public class Contador {
   }
 
   /**
-   * @param parametroUm   . Recebe o primeiro número do usuário.
-   * @param parametroDois . Recebe o segundo número do usuário.
-   * @throws ParametrosInvalidosException
+   * Conta de parametroUm até parametroDois, imprimindo os números no processo.
+   * 
+   * @param parametroUm   O primeiro número inteiro.
+   * @param parametroDois O segundo número inteiro, que deve ser maior que
+   *                      parametroUm.
+   * @throws ParametrosInvalidosException Se parametroDois não for maior que
+   *                                      parametroUm.
    */
+
   static void contar(int parametroUm, int parametroDois) throws ParametrosInvalidosException {
 
     // Valida se parametroUm é maior que parametroDois e lançar exceção
@@ -60,7 +69,7 @@ public class Contador {
       }
 
       // Imprime mensagem de 'Programa Finalizado', caso a condição seja verdadeira.
-     System.out.println("\nPROGRAMA FINALIZADO...!\n");
+      System.out.println("\nPROGRAMA FINALIZADO...!\n");
 
     } else {
 
