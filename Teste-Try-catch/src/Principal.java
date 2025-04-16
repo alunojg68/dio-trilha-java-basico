@@ -3,7 +3,7 @@ public class Principal {
       
         double valorTotal=1000.0;
         double entrada=300;
-        int parcelas=5;
+        int parcelas=8;
 
         
         try {

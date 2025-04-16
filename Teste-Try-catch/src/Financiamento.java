@@ -24,7 +24,7 @@ public class Financiamento {
     }
     public double Prestacao(){
 
-        return((valorTotal - entrada) / parcelas);
+        return(parcelas + Double.valueOf(" PARCELAS , De R$ ") + (valorTotal - entrada) / parcelas);
     }
     
 }
