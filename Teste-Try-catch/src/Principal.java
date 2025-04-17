@@ -9,7 +9,8 @@ public class Principal {
         try {
 
             Financiamento f= new Financiamento(valorTotal,entrada,parcelas);
-              System.out.println(f.Prestacao());
+            
+             f.exibirPrestacao();
 
             
         } catch (Exception e) {

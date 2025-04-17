@@ -1,3 +1,5 @@
+
+
 public class Financiamento {
 
     public Double valorTotal;
@@ -22,9 +24,9 @@ public class Financiamento {
 
 
     }
-    public double Prestacao(){
+    public void exibirPrestacao(){
 
-        return(parcelas + Double.valueOf(" PARCELAS , De R$ ") + (valorTotal - entrada) / parcelas);
+      System.out.printf("  %s Pacelas de R$ %s" ,parcelas, (valorTotal - entrada) / parcelas);
+
     }
-    
 }
